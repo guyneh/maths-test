@@ -5,7 +5,7 @@ import React from 'react';
 const CelebratoryGraphic: React.FC = () => {
     return (
         <div>
-            <h1>Congratulations! You answered all questions correctly!</h1>
+            <h1>Congratulations!</h1>
             {/* GRAPHIC HERE */}
         </div>
     );

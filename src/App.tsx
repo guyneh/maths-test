@@ -9,19 +9,19 @@ import { questionsData, QuestionData } from './data/questions';
 
 // Function to shuffle an array (for questions and options)
 const shuffleArray = <T,>(array: T[]): T[] => {
-    return array.sort(() => 0.5 - Math.random());
+	return array.sort(() => 0.5 - Math.random());
 }
 
 // Shuffle and retrieve a number of random questions from the questionsData array
 const getRandomQuestions = (questions: QuestionData[], count: number): QuestionData[] => {
-    const shuffledQuestions = shuffleArray(questions);
-    const selectedQuestions = shuffledQuestions.slice(0, count);
-    
-    // Shuffle options order for each selected question
-    return selectedQuestions.map(question => ({
-        ...question,
-        options: shuffleArray(question.options)
-    }));
+	const shuffledQuestions = shuffleArray(questions);
+	const selectedQuestions = shuffledQuestions.slice(0, count);
+
+	// Shuffle options order for each selected question
+	return selectedQuestions.map(question => ({
+		...question,
+		options: shuffleArray(question.options)
+	}));
 }
 
 const App: React.FC = () => {
@@ -77,7 +77,6 @@ const App: React.FC = () => {
 		<div className="app-container">
 			{started && (
 				<div className="header-container">
-					<button onClick={handleRetake}>Restart</button>
 					<h1 className="header-title">GCSE Maths Test</h1>
 				</div>
 			)}
@@ -123,6 +122,9 @@ const App: React.FC = () => {
 							)}
 						</div>
 					</div>
+				)}
+				{started && (
+					<button className="restart-button" onClick={handleRetake}>Back to Home</button>
 				)}
 			</div>
 		</div>
