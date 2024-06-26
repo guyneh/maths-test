@@ -88,10 +88,10 @@ button:hover:not(:disabled) {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   align-items: center;
   width: 100%;
   max-width: 800px;
-  border-radius: 12px;
   margin-bottom: 20px;
 }
 
