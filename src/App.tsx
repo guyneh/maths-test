@@ -23,6 +23,7 @@ const App: React.FC = () => {
 	const [selectedQuestions, setSelectedQuestions] = useState<QuestionData[]>([]);
 	const [answers, setAnswers] = useState<(string | null)[]>(Array(numQuestions).fill(null));
 	const [submitted, setSubmitted] = useState(false);
+	const [started, setStarted] = useState(false);
 
 	// Select a number random questions when the component mounts
 	useEffect(() => {
@@ -63,7 +64,13 @@ const App: React.FC = () => {
 
 	return (
 		<div className="container">
-			{submitted ? (
+			{!started ? (
+				<div>
+					<h1>GCSE Maths Test</h1>
+					<p>5 questions to answer</p>
+					<button onClick={() => setStarted(true)}>Begin</button>
+				</div>
+			) : submitted ? (
 				allCorrect ? (
 					<CelebratoryGraphic />
 				) : (
@@ -90,9 +97,9 @@ const App: React.FC = () => {
 					<div>
 						{currentQuestionIndex > 0 && <button onClick={handlePrevious}>Previous</button>}
 						{currentQuestionIndex < selectedQuestions.length - 1 ? (
-							<button onClick={handleNext}>Next</button>
+							<button onClick={handleNext} disabled={!answers[currentQuestionIndex]}>Next</button>
 						) : (
-							<button onClick={handleSubmit}>Submit</button>
+							<button onClick={handleSubmit} disabled={!answers[currentQuestionIndex]}>Submit</button>
 						)}
 					</div>
 				</div>
