@@ -13,8 +13,13 @@ A simple GCSE maths quiz built with React using Typescript
 
 `src/App.tsx`:
 -   Main component that sets up the quiz
+-   Randomly selects a specified number of questions from the question pool
 -   Handles the state of the quiz (current question index, user's answers, submission etc.)
 -   Displays the questions and the celebratory graphic based on the user's performance
+
+`src/App.css`:
+-   CSS styles for buttons, containers and other elements
+
 
 ## Dependencies:
 - React
@@ -22,6 +27,7 @@ A simple GCSE maths quiz built with React using Typescript
 - Confetti (for the celebratory graphic)
 
 
+## Demo:
 # Live Demo:
 https://guyneh.github.io/maths-test/
 

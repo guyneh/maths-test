@@ -9,6 +9,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><text x="0" y="15" font-size="20" fill="rgba(0,0,0,0.1)">+</text><text x="20" y="15" font-size="20" fill="rgba(0,0,0,0.1)">-</text><text x="0" y="35" font-size="20" fill="rgba(0,0,0,0.1)">×</text><text x="20" y="35" font-size="20" fill="rgba(0,0,0,0.1)">÷</text></svg>');
+  background-size: 40px 40px;
 }
 
 .container {
@@ -22,6 +24,8 @@ body {
   border-radius: 12px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  position: relative;
 }
 
 .question-container {
@@ -88,10 +92,10 @@ button:hover:not(:disabled) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
   align-items: center;
   width: 100%;
   max-width: 800px;
+  border-radius: 12px;
   margin-bottom: 20px;
 }
 
