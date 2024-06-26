@@ -64,9 +64,9 @@ const App: React.FC = () => {
 
 	return (
 		<div className="container">
+			<h1>GCSE Maths Test</h1>
 			{!started ? (
 				<div>
-					<h1>GCSE Maths Test</h1>
 					<p>5 questions to answer</p>
 					<button onClick={() => setStarted(true)}>Begin</button>
 				</div>
@@ -94,12 +94,14 @@ const App: React.FC = () => {
 							/>
 						</>
 					)}
-					<div>
-						{currentQuestionIndex > 0 && <button onClick={handlePrevious}>Previous</button>}
+					<div className="button-container">
+						{currentQuestionIndex > 0 && (
+							<button className="button-left" onClick={handlePrevious}>Previous</button>
+						)}
 						{currentQuestionIndex < selectedQuestions.length - 1 ? (
-							<button onClick={handleNext} disabled={!answers[currentQuestionIndex]}>Next</button>
+							<button className="button-right" onClick={handleNext} disabled={!answers[currentQuestionIndex]}>Next</button>
 						) : (
-							<button onClick={handleSubmit} disabled={!answers[currentQuestionIndex]}>Submit</button>
+							<button className="button-right" onClick={handleSubmit} disabled={!answers[currentQuestionIndex]}>Submit</button>
 						)}
 					</div>
 				</div>

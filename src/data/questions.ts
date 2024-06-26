@@ -6,7 +6,6 @@ export interface QuestionData {
 	correct: string;
 }
 
-// Selects 5 random questions from the data folder
 export const questionsData: QuestionData[] = [
 	{
 		question: 'What is 2 + 2?',
