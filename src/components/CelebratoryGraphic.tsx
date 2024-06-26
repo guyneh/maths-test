@@ -9,7 +9,8 @@ const CelebratoryGraphic: React.FC = () => {
     
     return (
         <div>
-            <h1>Congratulations! You answered all questions correctly!</h1>
+            <h1>Congratulations!</h1>
+            <h2>You answered all questions correctly!</h2>
             <Confetti width={width} height={height}  />
         </div>
     );

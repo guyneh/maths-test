@@ -38,17 +38,17 @@ export const questionsData: QuestionData[] = [
 		correct: '0.3',
 	},
 	{
-		question: 'What is the square root of 49?',
+		question: 'What is the square root of 49 ?',
 		options: ['5', '6', '7', '8'],
 		correct: '7',
 	},
 	{
-		question: 'What is 7/9 - 2/5',
+		question: 'What is 7/9 - 2/5 ?',
 		options: ['5/4', '14/45', '4/45', '17/45'],
 		correct: '17/45',
 	},
 	{
-		question: 'What is 9 x 6?',
+		question: 'What is 9 x 6 ?',
 		options: ['52', '54', '56', '58'],
 		correct: '54',
 	},
@@ -98,7 +98,7 @@ export const questionsData: QuestionData[] = [
 		correct: '20',
 	},
 	{
-		question: 'What is the square root of 81?',
+		question: 'What is the square root of 81 ?',
 		options: ['7', '8', '9', '10'],
 		correct: '9',
 	},
