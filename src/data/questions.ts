@@ -73,9 +73,9 @@ export const questionsData: QuestionData[] = [
 		correct: '3',
 	},
 	{
-		question: 'What is 14 + 9?',
-		options: ['21', '22', '23', '24'],
-		correct: '23',
+		question: 'Calculate 2506 * 159, giving your answer to 1 significant figure.',
+		options: ['400,000', '300,000', '398,454', '4'],
+		correct: '400,000',
 	},
 	{
 		question: 'The ratio of sheep to cows is 5:6. If there are 114 cows, how many sheep are there ?',

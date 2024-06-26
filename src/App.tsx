@@ -89,7 +89,7 @@ const App: React.FC = () => {
 					</div>
 				) : submitted ? (
 					allCorrect ? (
-						<CelebratoryGraphic />
+						<CelebratoryGraphic  />
 					) : (
 						<div>
 							<h1>You scored {numCorrect} out of {numQuestions}</h1>
