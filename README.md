@@ -1,4 +1,4 @@
-### Maths tester
+# Maths tester
 A simple GCSE maths quiz built with React using Typescript
 
 ## Project Structure:
@@ -28,10 +28,10 @@ A simple GCSE maths quiz built with React using Typescript
 
 
 ## Demo:
-# Live Demo:
+### Live Demo:
 https://guyneh.github.io/maths-test/
 
-# Run locally:
+### Run locally:
 1.  Clone the repository in your terminal:
     git clone https://github.com/guyneh/maths-test.git
 
