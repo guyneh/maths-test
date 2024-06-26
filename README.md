@@ -1,17 +1,29 @@
 ### Maths tester
 A simple GCSE maths quiz built with React using Typescript
 
--   Create a litle maths tester in React
--   Should ask 5 GCSE maths questions
--   Each with 4 multiple choice options, 1 correct
--   If 5/5 --> final screen shows a celebratory graphic
--   Testers can go back and edit answers
--   Doesn't need to look pretty, but not dreadful
+## Project Structure:
+`src/data/questions.ts`:
+-   Contains the pool of all GCSE maths questions used in the quiz
+-   Each question has the question text, 4 multiple choice options and one correct answer
+-   To add more questions, simply add an object to the end of the array with the same format
+
+`src/components`:
+-   `Question.tsx`: Displays a single question with multiple choice options
+-   `CelebratoryGraphic.tsx`: Displays a celebratory graphic if the user gets all questions correct
+
+`src/App.tsx`:
+-   Main component that sets up the quiz
+-   Handles the state of the quiz (current question index, user's answers, submission etc.)
+-   Displays the questions and the celebratory graphic based on the user's performance
+
+## Dependencies:
+- React
+- Typescript
+- Confetti (for the celebratory graphic)
 
 
 # Live Demo:
 https://guyneh.github.io/maths-test/
-
 
 # Run locally:
 1.  Clone the repository in your terminal:
